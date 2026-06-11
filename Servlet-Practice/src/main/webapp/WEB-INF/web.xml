@@ -10,17 +10,6 @@
   <servlet-name>sum</servlet-name>
   <url-pattern>/add</url-pattern>
   </servlet-mapping>
-  <!--  servlet for Dispather -->
-  <servlet> 
-  <servlet-name>sqr</servlet-name>
-  <servlet-class>addnumber.SqrDispather</servlet-class>
-  </servlet>
-  
-  <servlet-mapping> 
-  <servlet-name>sqr</servlet-name>
-  <url-pattern>/sqr</url-pattern>
-  </servlet-mapping>
-  
   
   <!--  servlet for printing data -->
   <servlet>
@@ -31,4 +20,47 @@
   <servlet-name>printing</servlet-name>
   <url-pattern>/print</url-pattern>
   </servlet-mapping>
+  
+  <!--  servlet for forward Dispather -->
+  <servlet> 
+  <servlet-name>qube</servlet-name>
+  <servlet-class>ServletDispather.Qube</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>qube</servlet-name>
+  <url-pattern>/qube</url-pattern>
+  </servlet-mapping>
+  
+  <servlet> 
+  <servlet-name>forward</servlet-name>
+  <servlet-class>ServletDispather.ForwardDispather</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>forward</servlet-name>
+  <url-pattern>/forward</url-pattern>
+  </servlet-mapping>
+  
+  <!--  Servlet for Include Dispatcher -->
+  <servlet> 
+  <servlet-name>include</servlet-name>
+  <servlet-class>ServletDispather.IncudeDispather1</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>include</servlet-name>
+  <url-pattern>/include</url-pattern>
+  </servlet-mapping>
+  
+  <servlet> 
+  <servlet-name>content</servlet-name>
+  <servlet-class>ServletDispather.IncludeDispatcherContent</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>content</servlet-name>
+  <url-pattern>/content</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
