@@ -22,11 +22,6 @@ public class AddServlet extends HttpServlet {
 		
 		PrintWriter out=res.getWriter(); 
 		out.println("Addition of two numbers ="+c);
-//		
-//		// Request Dispatcher
-	    req.setAttribute("t", c);
-		RequestDispatcher rd=req.getRequestDispatcher("sqr");
-		rd.forward(req, res);
 		
 	}
 	// dopost method for post request
