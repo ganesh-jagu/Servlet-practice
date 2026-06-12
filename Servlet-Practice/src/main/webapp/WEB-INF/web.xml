@@ -63,4 +63,25 @@
   <url-pattern>/content</url-pattern>
   </servlet-mapping>
   
+  <!--  Send redirect -->
+  <servlet> 
+  <servlet-name>first</servlet-name>
+  <servlet-class>ServletDispather.SendRedirect_1</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>first</servlet-name>
+  <url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  
+  <servlet> 
+  <servlet-name>second</servlet-name>
+  <servlet-class>ServletDispather.SendRedirect_2</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>second</servlet-name>
+  <url-pattern>/second</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
