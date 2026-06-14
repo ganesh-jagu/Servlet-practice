@@ -123,5 +123,27 @@
   <servlet-name>userck2</servlet-name>
   <url-pattern>/userck2</url-pattern>
   </servlet-mapping>
+  <!--  Servlet Context and config  -->
+  
+  <!-- config -->
+  <servlet>
+    <servlet-name>context</servlet-name>
+    <servlet-class>Config_Context.ServletContextEx</servlet-class>
+   <init-param>
+   <param-name>Village</param-name>
+   <param-value>Chendurthi</param-value>
+   </init-param>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>context</servlet-name>
+    <url-pattern>/context</url-pattern>
+</servlet-mapping>
+
+<!--  context  -->
+  <context-param>
+  <param-name>name</param-name>
+  <param-value>Ganesh</param-value>
+  </context-param>
   
 </web-app>
