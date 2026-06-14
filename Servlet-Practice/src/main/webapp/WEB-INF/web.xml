@@ -84,4 +84,44 @@
   <url-pattern>/second</url-pattern>
   </servlet-mapping>
   
+  <!--  Session  -->
+  <servlet> 
+  <servlet-name>addition</servlet-name>
+  <servlet-class>ServletDispather.AdditionSe</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>addition</servlet-name>
+  <url-pattern>/addition</url-pattern>
+  </servlet-mapping>
+  
+  <servlet> 
+  <servlet-name>multiplication</servlet-name>
+  <servlet-class>ServletDispather.MultiplicationSe</servlet-class>
+  </servlet>
+  
+  <servlet-mapping> 
+  <servlet-name>multiplication</servlet-name>
+  <url-pattern>/multiplication</url-pattern>
+  </servlet-mapping>
+  
+  <!--  user Cookie -->
+  <servlet>
+  <servlet-name>userck</servlet-name>
+  <servlet-class>ServletDispather.userCookie_1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>userck</servlet-name>
+  <url-pattern>/userck</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>userck2</servlet-name>
+  <servlet-class>ServletDispather.usercookie_2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>userck2</servlet-name>
+  <url-pattern>/userck2</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
