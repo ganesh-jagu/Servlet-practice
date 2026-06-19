@@ -1,17 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
+<%@ taglib uri="jakarta.tags.core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>EL Tag</title>
+<title>JSTL tags</title>
 </head>
 <body>
-<h1> Expression Language Tag "$ { }" </h1>  
+<c:set var="name" value="nani"/>
 
-My name is ${name} 
-<br>
-Addition: ${10+3}
+<c:out value="${name}" />
+
 </body>
 </html>
