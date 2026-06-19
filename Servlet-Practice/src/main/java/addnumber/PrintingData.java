@@ -12,8 +12,9 @@ public class PrintingData extends HttpServlet {
 	{
 		String str=req.getParameter("data1");
 		PrintWriter out=res.getWriter();
+		out.println("<html> <body bgcolor=green> <h1 align=center> ");
 		out.println(str);
-		
+		out.println("</h1> </body> </html>");
 	}
 	
 
