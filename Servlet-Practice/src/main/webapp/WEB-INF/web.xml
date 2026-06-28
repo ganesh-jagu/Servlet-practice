@@ -148,21 +148,22 @@
   
 <!--  Filters -->
 	<!--  servlet -->
-	<servlet>
+	
+	<!--  <servlet>
 	<servlet-name>FilterExServlet</servlet-name>
 	<servlet-class>Filters.FilterEx</servlet-class>
 	</servlet>
 	<servlet-mapping>
 	<servlet-name>FilterExServlet</servlet-name>
 	<url-pattern>/filterEx</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 	<!-- Filter -->
-	<filter>
+<!-- 	<filter>
 	<filter-name>FilterEx</filter-name>
 	<filter-class>Filters.Filter_1</filter-class>
 	</filter>
 	<filter-mapping>
 	<filter-name>FilterEx</filter-name>
 	<url-pattern>/filterEx</url-pattern>
-	</filter-mapping>
+	</filter-mapping>   -->
 </web-app>

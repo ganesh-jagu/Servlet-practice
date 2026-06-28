@@ -6,11 +6,14 @@ import jakarta.servlet.FilterConfig;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
+import jakarta.servlet.annotation.WebFilter;
+
 import java.io.IOException;
 
 /**
  * Servlet Filter implementation class Filter_1
  */
+@WebFilter("/filterEx")
 public class Filter_1 implements Filter {
        
 	@Override
