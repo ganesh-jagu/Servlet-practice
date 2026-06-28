@@ -53,14 +53,17 @@ row count: ${result.rowCount}
 ${var.id} - ${var.name} - ${var.cource} <br>
 </c:forEach>
 --%>
+<!--  Delete -->
+<sql:update var="del" dataSource="${db}"> delete from jstlEx where name='nani'</sql:update> <br>
+Row deleted=${del}
 <!--  param -->
-<sql:query var="user" dataSource="${db}"> 
+<%--<sql:query var="user" dataSource="${db}"> 
 select * from jstlEx where id=? 
 <sql:param value="2"/>
 </sql:query> 
 <br> 
 <c:forEach var="use" items="${user.rows}">
 ID: ${use.id} - name: ${use.name} 
-</c:forEach>
+</c:forEach>  --%>
 </body>
 </html>
