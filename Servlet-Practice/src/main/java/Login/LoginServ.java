@@ -16,14 +16,12 @@ public class LoginServ extends HttpServlet{
 		String uname=req.getParameter("user");
 		String pass=req.getParameter("pass");
 		
-		String tempuser="ganesh";
-		String temppass="Pass";
+		// String tempuser="ganesh";
+		// String temppass="Pass";
 		
 		HttpSession session= req.getSession();
-		
-		
-		
-		if(uname.equals(tempuser) && pass.equals(temppass))
+		LoginDao ld=new LoginDao();
+		if(ld.check(uname, pass))
 		{
 			session.setAttribute("user", uname);
 			res.sendRedirect("wellcome.jsp");
